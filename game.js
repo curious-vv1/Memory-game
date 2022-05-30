@@ -17,7 +17,7 @@ $(document).keypress(function () {
     }
 });
 
-$(document).dblclick(function () {
+$(document).on("dblclick", function () {
     if (!start) {
         $("#level-title").text("Level  " + level);
         nextSequence();
